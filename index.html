@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RS. Padamu Negeri</title>
+
+    <link rel="stylesheet" href="rs.css">
+
+    <style>
+        /* SISTEM HALAMAN */
+
+        .page {
+            display: none;
+            min-height: 450px;
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* KONTEN HALAMAN */
+
+        .page-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page-content > h1 {
+            background: #075b91;
+            color: white;
+            padding: 20px;
+            margin: 0 0 25px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .page-card {
+            background: white;
+            padding: 35px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            line-height: 1.8;
+        }
+
+        .page-card h2 {
+            color: #075b91;
+            margin-top: 10px;
+        }
+
+        .page-card p {
+            color: #444;
+            font-size: 16px;
+        }
+
+        .page-card ul {
+            padding-left: 25px;
+        }
+
+        .page-card li {
+            margin-bottom: 8px;
+        }
+
+        .page-icon {
+            font-size: 45px;
+            color: #0785c9;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* MENU AKTIF */
+
+        .menu-link.active {
+            outline: 3px solid #0785c9;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* TOMBOL KEMBALI */
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: #075b91;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-home:hover {
+            background: #0785c9;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 768px) {
+            .page {
+                padding: 20px 10px;
+            }
+
+            .page-content > h1 {
+                font-size: 20px;
+            }
+
+            .page-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="site-shell">
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <img src="gambar/logo_rs.jpg" alt="RS Padamu Negeri">
+    </header>
+
+    <!-- GARIS PEMBATAS -->
+    <div class="separator">
+        <img src="gambar/garis-3d.jpg" alt="">
+    </div>
+
+    <!-- MENU -->
+    <nav class="menu">
+
+        <a href="#home" class="menu-link active"
+           onclick="bukaHalaman('home', this)">
+            <img src="gambar/home.jpg"
+                 onmouseover="this.src='gambar/home_over.jpg'"
+                 onmouseout="this.src='gambar/home.jpg'"
+                 alt="Home">
+        </a>
+
+        <a href="#lokasi" class="menu-link"
+           onclick="bukaHalaman('lokasi', this)">
+            <img src="gambar/lokasi.jpg"
+                 onmouseover="this.src='gambar/lokasi_over.jpg'"
+                 onmouseout="this.src='gambar/lokasi.jpg'"
+                 alt="Lokasi">
+        </a>
+
+        <a href="#layanan" class="menu-link"
+           onclick="bukaHalaman('layanan', this)">
+            <img src="gambar/layanan.jpg"
+                 onmouseover="this.src='gambar/layanan_over.jpg'"
+                 onmouseout="this.src='gambar/layanan.jpg'"
+                 alt="Layanan">
+        </a>
+
+        <a href="#fasilitas" class="menu-link"
+           onclick="bukaHalaman('fasilitas', this)">
+            <img src="gambar/fasilitas.jpg"
+                 onmouseover="this.src='gambar/fasilitas_over.jpg'"
+                 onmouseout="this.src='gambar/fasilitas.jpg'"
+                 alt="Fasilitas">
+        </a>
+
+        <a href="#profil" class="profile-link menu-link"
+           onclick="bukaHalaman('profil', this)">
+            PROFIL RS <span>›</span>
+        </a>
+
+    </nav>
+
+    <!-- KONTEN HALAMAN -->
+    <main>
+
+        <!-- HOME -->
+        <section class="page active" id="halaman-home">
+
+            <div class="main-content">
+
+                <!-- NEWS -->
+                <section class="panel news-panel">
+
+                    <h2 class="panel-heading">
+                        <span>✦</span> NEWS
+                    </h2>
+
+                    <div class="news-body">
+
+                        <h3 class="news-title">
+                            Pandemi Flu Burung Mencemaskan Dunia
+                        </h3>
+
+                        <p class="date">
+                            Senin, 3 Oktober 2005
+                        </p>
+
+                        <p class="news-description">
+                            Badan kesehatan dunia WHO mencemaskan
+                            penularan flu burung yang semakin meluas.
+                            WHO khawatir penularan virus ini tidak hanya
+                            dari hewan ke manusia, tetapi juga dari
+                            manusia ke manusia. Hal ini dapat menyebabkan
+                            epidemi atau penularan massal.
+                        </p>
+
+                    </div>
+                </section>
+
+                <!-- PROFIL SINGKAT -->
+                <section class="panel profile-panel">
+
+                    <h2 class="panel-heading">
+                        <span>✚</span> PROFIL RS
+                    </h2>
+
+                    <div class="profile-body">
+
+                        <p class="profile-description">
+                            RS. Padamu Negeri berdiri pada tahun 1975.
+                            Awalnya rumah sakit ini hanya seluas 3 ha.
+                            Namun pada tahun 1992 direnovasi menjadi
+                            15 ha. Dan seterusnya.
+                        </p>
+
+                        <div class="profile-note">
+                            Melayani masyarakat dengan sepenuh hati
+                            sejak 1975.
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- DOKTER -->
+                <section class="panel doctor-panel">
+
+                    <h2 class="panel-heading">
+                        <span>✚</span> DOKTER
+                    </h2>
+
+                    <div class="doctor-frame">
+
+                        <img src="gambar/dokter_wanita.jpg"
+                             alt="Dokter perempuan"
+                             class="doctor-image">
+
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+        <!-- LOKASI -->
+        <section class="page" id="halaman-lokasi">
+
+            <div class="page-content">
+
+                <h1>LOKASI RUMAH SAKIT</h1>
+
+                <div class="page-card">
+
+                    <div class="page-icon">⌖</div>
+
+                    <h2>Lokasi RS. Padamu Negeri</h2>
+
+                    <p>
+                        Selamat datang di halaman lokasi
+                        RS. Padamu Negeri.
+                    </p>
+
+                    <p>
+                        Halaman ini berisi informasi mengenai
+                        alamat dan lokasi rumah sakit.
+                    </p>
+
+                    <p>
+                        RS. Padamu Negeri berkomitmen memberikan
+                        pelayanan kesehatan yang mudah dijangkau
+                        oleh masyarakat.
+                    </p>
+
+                    <a href="#home" class="back-home"
+                       onclick="bukaHalaman('home', document.querySelector('.menu-link'))">
+                        Kembali ke Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LAYANAN -->
+        <section class="page" id="halaman-layanan">
+
+            <div class="page-content">
+
+                <h1>LAYANAN RUMAH SAKIT</h1>
+
+                <div class="page-card">
+
+                    <div class="page-icon">✚</div>
+
+                    <h2>Layanan Kesehatan</h2>
+
+                    <p>
+                        RS. Padamu Negeri menyediakan berbagai
+                        layanan kesehatan untuk membantu masyarakat
+                        mendapatkan pelayanan medis.
+                    </p>
+
+                    <ul>
+                        <li>Pelayanan pemeriksaan kesehatan</li>
+                        <li>Pelayanan konsultasi dokter</li>
+                        <li>Pelayanan rawat jalan</li>
+                        <li>Pelayanan rawat inap</li>
+                        <li>Pelayanan kesehatan umum</li>
+                    </ul>
+
+                    <a href="#home" class="back-home"
+                       onclick="bukaHalaman('home', document.querySelector('.menu-link'))">
+                        Kembali ke Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FASILITAS -->
+        <section class="page" id="halaman-fasilitas">
+
+            <div class="page-content">
+
+                <h1>FASILITAS RUMAH SAKIT</h1>
+
+                <div class="page-card">
+
+                    <div class="page-icon">▦</div>
+
+                    <h2>Fasilitas RS. Padamu Negeri</h2>
+
+                    <p>
+                        Rumah sakit memiliki berbagai fasilitas
+                        untuk mendukung pelayanan kesehatan
+                        dan kenyamanan pasien.
+                    </p>
+
+                    <ul>
+                        <li>Ruang pemeriksaan pasien</li>
+                        <li>Ruang rawat inap</li>
+                        <li>Ruang tunggu pasien</li>
+                        <li>Ruang pelayanan kesehatan</li>
+                        <li>Ruang konsultasi dokter</li>
+                    </ul>
+
+                    <a href="#home" class="back-home"
+                       onclick="bukaHalaman('home', document.querySelector('.menu-link'))">
+                        Kembali ke Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROFIL RS -->
+        <section class="page" id="halaman-profil">
+
+            <div class="page-content">
+
+                <h1>PROFIL RS. PADAMU NEGERI</h1>
+
+                <div class="page-card">
+
+                    <div class="page-icon">✚</div>
+
+                    <h2>Sejarah Rumah Sakit</h2>
+
+                    <p>
+                        RS. Padamu Negeri berdiri pada tahun 1975.
+                        Pada awal berdirinya, rumah sakit ini
+                        memiliki luas sekitar 3 hektare.
+                    </p>
+
+                    <p>
+                        Pada tahun 1992, rumah sakit mengalami
+                        renovasi dan perluasan menjadi 15 hektare.
+                    </p>
+
+                    <p>
+                        Seiring perkembangan waktu, RS. Padamu Negeri
+                        terus berupaya meningkatkan kualitas
+                        pelayanan kesehatan kepada masyarakat.
+                    </p>
+
+                    <div class="profile-note">
+                        Melayani masyarakat dengan sepenuh hati
+                        sejak 1975.
+                    </div>
+
+                    <a href="#home" class="back-home"
+                       onclick="bukaHalaman('home', document.querySelector('.menu-link'))">
+                        Kembali ke Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 RS. PADAMU NEGERI
+        <span>Selalu Setia Melayani Anda</span>
+    </footer>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function bukaHalaman(namaHalaman, tombol) {
+
+    // Sembunyikan semua halaman
+    const semuaHalaman = document.querySelectorAll(".page");
+
+    semuaHalaman.forEach(function(halaman) {
+        halaman.classList.remove("active");
+    });
+
+    // Tampilkan halaman yang dipilih
+    const halamanTujuan = document.getElementById(
+        "halaman-" + namaHalaman
+    );
+
+    if (halamanTujuan) {
+        halamanTujuan.classList.add("active");
+    }
+
+    // Hilangkan status aktif dari semua menu
+    const semuaMenu = document.querySelectorAll(".menu-link");
+
+    semuaMenu.forEach(function(menu) {
+        menu.classList.remove("active");
+    });
+
+    // Aktifkan menu yang dipilih
+    if (tombol) {
+        tombol.classList.add("active");
+    }
+
+    // Kembali ke bagian atas
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
