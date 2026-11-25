@@ -1,0 +1,361 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 12px;
+    background: #eaf5fc;
+    font-family: Arial, Verdana, sans-serif;
+    color: #172b4d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.site-shell {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background: #f5fbff;
+    border: 1px solid #c7e6f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 22px rgba(0, 75, 130, 0.12);
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    background: white;
+}
+
+.header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* GARIS */
+.separator {
+    height: 25px;
+    padding: 3px 0;
+    background: #e9f7ff;
+}
+
+.separator img {
+    display: block;
+    width: 100%;
+    height: 20px;
+    object-fit: fill;
+}
+
+/* MENU */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 9px 12px 14px;
+    background: #f2faff;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    border: 1px solid #b9e1fa;
+    border-radius: 11px;
+    background: linear-gradient(#ffffff, #dff2ff);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: #cceaff;
+    transform: translateY(-2px);
+}
+
+.menu img {
+    display: block;
+    max-width: 95%;
+    max-height: 39px;
+    object-fit: contain;
+}
+
+.menu .profile-link {
+    color: #073b70;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-link span {
+    margin-left: 5px;
+    color: #0879bd;
+    font-size: 22px;
+}
+
+/* KONTEN UTAMA */
+.main-content {
+    display: grid;
+    grid-template-columns: 32% 38% 30%;
+    gap: 12px;
+    padding: 0 12px 14px;
+    align-items: stretch;
+}
+
+.panel {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #b9e1fa;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 83, 145, 0.08);
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 58px;
+    margin: 0;
+    padding: 10px 20px;
+    background: linear-gradient(105deg, #07518e, #079bd0);
+    color: white;
+    font-size: 22px;
+}
+
+.panel-heading span {
+    font-size: 27px;
+}
+
+/* NEWS */
+.news-body {
+    padding: 13px 17px 16px;
+}
+
+.eyebrow {
+    margin: 0 0 4px;
+    color: #0879bd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news-title {
+    margin: 3px 0 7px;
+    color: #073b70;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.date {
+    margin: 7px 0 10px;
+    color: #53677e;
+    font-size: 14px;
+}
+
+.news-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+/* PROFIL RS */
+.profile-body {
+    padding: 15px 17px 13px;
+}
+
+.profile-description {
+    margin: 0 0 12px;
+    color: #172b4d;
+    font-size: 20px;
+    line-height: 1.45;
+}
+
+.profile-note {
+    margin-top: 9px;
+    padding: 10px;
+    border-left: 5px solid #f07827;
+    border-radius: 7px;
+    background: linear-gradient(100deg, #e6f5ff, #cfeaff);
+    color: #07518e;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* DOKTER */
+.doctor-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-frame {
+    flex: 1;
+    min-height: 440px;
+    margin: 0;
+    overflow: hidden;
+    background: #eaf5fc;
+}
+
+.doctor-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* INFORMASI BAWAH */
+.information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 12px 14px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 95px;
+    padding: 12px 17px;
+    border: 1px solid #b9e1fa;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #ffffff, #dcefff);
+}
+
+.info-icon {
+    display: flex;
+    flex: 0 0 55px;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #078bc7, #07518e);
+    color: white;
+    font-size: 30px;
+}
+
+.info-card h3 {
+    margin: 0 0 2px;
+    color: #073b70;
+    font-size: 17px;
+}
+
+.info-card p {
+    margin: 0 0 4px;
+    color: #31577c;
+    font-size: 13px;
+}
+
+.info-card a {
+    color: #ed711e;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    padding: 12px;
+    background: linear-gradient(100deg, #064b85, #078bc3);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer span {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .doctor-panel {
+        grid-column: 1 / -1;
+    }
+
+    .doctor-frame,
+    .doctor-image {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .menu .profile-link {
+        grid-column: 1 / -1;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 8px 10px;
+    }
+
+    .doctor-panel {
+        grid-column: auto;
+    }
+
+    .panel-heading {
+        min-height: 45px;
+        font-size: 18px;
+    }
+
+    .news-title {
+        font-size: 20px;
+    }
+
+    .profile-description {
+        font-size: 17px;
+    }
+
+    .doctor-frame,
+    .doctor-image {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+        padding: 0 8px 10px;
+    }
+
+    .info-card {
+        min-height: 80px;
+    }
+}

@@ -1,0 +1,16 @@
+RS. PADAMU NEGERI
+
+ISI FOLDER:
+- index.html: halaman utama versi lengkap.
+- index_gambar.html: versi dengan gambar berita dan profil.
+- index_tanpa_gambar.html: versi tanpa gambar pada bagian berita dan profil.
+- rs.css: seluruh pengaturan tampilan (CSS), terpisah dari HTML.
+- folder gambar/: seluruh gambar lokal yang digunakan halaman.
+
+CARA MEMBUKA:
+1. Ekstrak ZIP terlebih dahulu.
+2. Buka folder RS_Padamu_Negeri_Bab6.
+3. Klik dua kali salah satu file index di atas.
+4. Pastikan file rs.css dan folder gambar tetap berada di folder yang sama dengan file index.
+
+Untuk melihat versi utama, buka index.html. Foto dokter perempuan sudah menggunakan gambar dokter yang sedang bekerja dengan laptop.
